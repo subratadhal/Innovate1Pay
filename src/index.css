@@ -169,4 +169,82 @@ body {
 .btn-secondary:focus {
   box-shadow: none; }
 
+.application-container {
+  background: #ebebeb;
+  border-top: 1px solid #ccc; }
+  .application-container .app-widget {
+    height: 80px; }
+    .application-container .app-widget .app-widget-section {
+      display: flex;
+      flex-direction: row;
+      height: 80px;
+      align-items: center;
+      padding: 0 30px; }
+      .application-container .app-widget .app-widget-section .app-widget-section__icon {
+        width: 21px;
+        height: 21px;
+        background: url("assets/images/tick.png") no-repeat right center; }
+      .application-container .app-widget .app-widget-section .app-widget-section__text {
+        padding-left: 20px;
+        font-size: 15px;
+        color: #888888;
+        font-family: "Trebuchet"; }
+      .application-container .app-widget .app-widget-section.app-widget-section--complete .app-widget-section__icon {
+        background-position: left center; }
+      .application-container .app-widget .app-widget-section.app-widget-section--complete .app-widget-section__text {
+        font-family: "TrebuchetBold";
+        color: #1752a2; }
+      .application-container .app-widget .app-widget-section.app-widget-section--active .app-widget-section__icon {
+        background-position: -22px center; }
+      .application-container .app-widget .app-widget-section.app-widget-section--active .app-widget-section__text {
+        font-family: "TrebuchetBold";
+        color: #1752a2; }
+  .application-container .app-wrapper {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.09);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px; }
+    .application-container .app-wrapper .app-body {
+      background: #fff;
+      width: 100%;
+      display: flex;
+      flex-direction: row; }
+      .application-container .app-wrapper .app-body .app-body__left {
+        flex: 1;
+        width: 100%;
+        background: #fff;
+        padding: 40px; }
+      .application-container .app-wrapper .app-body .app-body__right {
+        background: #f4f4f4;
+        flex-basis: 290px;
+        padding: 40px; }
+      .application-container .app-wrapper .app-body .main-heading {
+        color: #333;
+        font-family: "Trebuchet";
+        font-size: 24px; }
+      .application-container .app-wrapper .app-body .sub-heading {
+        color: #333;
+        font-family: "Trebuchet";
+        font-size: 18px; }
+    .application-container .app-wrapper .app-footer {
+      width: 100%;
+      border-top: 1px solid #ccc;
+      padding: 15px 40px;
+      background: #fff;
+      display: flex; }
+      .application-container .app-wrapper .app-footer .primary-btn {
+        width: 220px;
+        border-radius: 0;
+        border: 0;
+        height: 56px;
+        background: #fff;
+        background: #00b44b;
+        color: #fff;
+        font-size: 22px;
+        margin-left: auto; }
+        .application-container .app-wrapper .app-footer .primary-btn:hover {
+          background: #00a746; }
+
 /*# sourceMappingURL=index.css.map */

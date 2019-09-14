@@ -1,7 +1,9 @@
 $fontHeading: "TrebuchetBold";
 $font: "Trebuchet";
 $green: #00b44b;
+$darkgreen: #00a746;
 $red: #f00;
+$blue: #1752a2;
 body {
   background: #fff;
 }
@@ -227,4 +229,104 @@ body {
 .btn-secondary.focus,
 .btn-secondary:focus {
   box-shadow: none;
+}
+
+.application-container {
+  background: #ebebeb;
+  border-top: 1px solid #ccc;
+  .app-widget {
+    height: 80px;
+    .app-widget-section {
+      display: flex;
+      flex-direction: row;
+      height: 80px;
+      align-items: center;
+      padding: 0 30px;
+      .app-widget-section__icon {
+        width: 21px;
+        height: 21px;
+        background: url("assets/images/tick.png") no-repeat right center;
+      }
+      .app-widget-section__text {
+        padding-left: 20px;
+        font-size: 15px;
+        color: #888888;
+        font-family: $font;
+      }
+      &.app-widget-section--complete {
+        .app-widget-section__icon {
+          background-position: left center;
+        }
+        .app-widget-section__text {
+          font-family: $fontHeading;
+          color: $blue;
+        }
+      }
+      &.app-widget-section--active {
+        .app-widget-section__icon {
+          background-position: -22px center;
+        }
+        .app-widget-section__text {
+          font-family: $fontHeading;
+          color: $blue;
+        }
+      }
+    }
+  }
+  .app-wrapper {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.09);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    .app-body {
+      background: #fff;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      .app-body__left {
+        flex: 1;
+        width: 100%;
+        background: #fff;
+        padding: 40px;
+      }
+      .app-body__right {
+        background: #f4f4f4;
+        flex-basis: 290px;
+        padding: 40px;
+      }
+      .main-heading {
+        color: #333;
+        font-family: $font;
+        font-size: 24px;
+      }
+      .sub-heading {
+        color: #333;
+        font-family: $font;
+        font-size: 18px;
+      }
+    }
+    .app-footer {
+      width: 100%;
+      border-top: 1px solid #ccc;
+      padding: 15px 40px;
+      background: #fff;
+      display: flex;
+      .primary-btn {
+        width: 220px;
+        border-radius: 0;
+        border: 0;
+        height: 56px;
+        background: #fff;
+        background: $green;
+        color: #fff;
+        font-size: 22px;
+        margin-left: auto;
+        &:hover {
+          background: $darkgreen;
+        }
+      }
+    }
+  }
 }
