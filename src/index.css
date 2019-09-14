@@ -1,0 +1,172 @@
+body {
+  background: #fff; }
+
+.home-banner {
+  min-height: 600px;
+  width: 100%;
+  background-image: url("assets/images/banner.jpg");
+  background-size: cover;
+  position: relative; }
+  .home-banner:before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .home-banner .reg-form-container {
+    min-height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .home-banner .reg-form-container .reg-form {
+      width: 870px;
+      height: 450px;
+      background: #093f88;
+      display: flex; }
+      .home-banner .reg-form-container .reg-form .req-section {
+        flex-basis: 260px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px; }
+        .home-banner .reg-form-container .reg-form .req-section .req-title {
+          font-family: "Trebuchet";
+          color: #eaf3ff;
+          font-size: 22px;
+          font-weight: 400;
+          margin-bottom: 15px; }
+        .home-banner .reg-form-container .reg-form .req-section p {
+          font-family: "Trebuchet";
+          color: #eaf3ff;
+          font-size: 14px;
+          font-weight: 400; }
+        .home-banner .reg-form-container .reg-form .req-section ul li {
+          background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAYAAABSx2cSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAI5JREFUeNpi+E8c+AbE+4GYG4gZYJiJgTjwGoinAPF6IOaCixJp80OobbFAvBmI2UixGQYWA/EmIF4GxMwsaJKHgPgllM0GxP5YDJgNxNxAvJCFSBtFgHgVmpgrI8hDDGQCdJtbgPgSHvX6QFwN41BkMxMDBWDgnI0vnrEBCSC2JdfPKK4cifE8cJoBAgwA7FGU4kcAPgwAAAAASUVORK5CYII=") no-repeat left center;
+          color: #eaf3ff;
+          font-size: 15px;
+          list-style: none;
+          padding: 0 0 0 36px;
+          margin: 0 0 17px;
+          width: 86%; }
+        .home-banner .reg-form-container .reg-form .req-section .warning-bar {
+          width: 100%;
+          height: 15px;
+          padding: 10px;
+          background: url("assets/images/warning.png") no-repeat center center; }
+        .home-banner .reg-form-container .reg-form .req-section .p13 {
+          margin-top: 10px;
+          font-size: 13px; }
+      .home-banner .reg-form-container .reg-form .form-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background: #1752a2;
+        padding: 25px; }
+        .home-banner .reg-form-container .reg-form .form-section .form-title {
+          font-family: "Trebuchet";
+          color: #eaf3ff;
+          font-size: 28px;
+          font-weight: 400;
+          margin-bottom: 15px; }
+        .home-banner .reg-form-container .reg-form .form-section .tab-container .nav {
+          background: #104a98; }
+          .home-banner .reg-form-container .reg-form .form-section .tab-container .nav .nav-item .nav-link {
+            border-radius: 0;
+            padding: 11px 25px;
+            border: 0;
+            cursor: pointer; }
+            .home-banner .reg-form-container .reg-form .form-section .tab-container .nav .nav-item .nav-link span {
+              display: block; }
+              .home-banner .reg-form-container .reg-form .form-section .tab-container .nav .nav-item .nav-link span:first-child {
+                color: #fff;
+                font-size: 16px;
+                font-family: "TrebuchetBold";
+                text-transform: uppercase; }
+              .home-banner .reg-form-container .reg-form .form-section .tab-container .nav .nav-item .nav-link span:last-child {
+                color: #aab7d2;
+                font-size: 14px; }
+            .home-banner .reg-form-container .reg-form .form-section .tab-container .nav .nav-item .nav-link:hover {
+              border: 0; }
+            .home-banner .reg-form-container .reg-form .form-section .tab-container .nav .nav-item .nav-link.active span:first-child {
+              color: #1752a2; }
+            .home-banner .reg-form-container .reg-form .form-section .tab-container .nav .nav-item .nav-link.active span:last-child {
+              color: #666; }
+        .home-banner .reg-form-container .reg-form .form-section .tab-container .tab-content .tab-pane {
+          background: #fff;
+          height: 300px;
+          padding: 35px 25px; }
+          .home-banner .reg-form-container .reg-form .form-section .tab-container .tab-content .tab-pane .form-group .form-control {
+            border-radius: 0;
+            height: 56px;
+            margin-bottom: 35px; }
+            .home-banner .reg-form-container .reg-form .form-section .tab-container .tab-content .tab-pane .form-group .form-control.bb-red {
+              border-bottom: 1px solid #f00; }
+            .home-banner .reg-form-container .reg-form .form-section .tab-container .tab-content .tab-pane .form-group .form-control.bb-green {
+              border-bottom: 1px solid #00b44b; }
+          .home-banner .reg-form-container .reg-form .form-section .tab-container .tab-content .tab-pane .error {
+            position: absolute;
+            top: 57px;
+            color: #f00;
+            right: 17px; }
+          .home-banner .reg-form-container .reg-form .form-section .tab-container .tab-content .tab-pane .primary-btn {
+            border: 4px solid #00b44b;
+            border-radius: 0;
+            height: 56px;
+            background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMCAYAAACwXJejAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIFJREFUeNpiZNjifZ2BgSEDiA8y4ABMQKwBxPuAuB+IOXEpgtEFQHwOiM1xKYIBkKlHgLgViNlwKQIBFiCuAuLTQGyISxEM6AHxSSCuxqcIbhsLHslLQJwAxOexmfQHiNuA2BSkAOZIZHADqvsktiD4B8QTgNgIXQHMpBuEogUgwAAlCxWJb+Q9DQAAAABJRU5ErkJggg==") no-repeat 85% 50%;
+            width: 100%;
+            color: #00b44b;
+            font-size: 22px; }
+            .home-banner .reg-form-container .reg-form .form-section .tab-container .tab-content .tab-pane .primary-btn:hover {
+              background: #00b44b url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMCAYAAACwXJejAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFVJREFUeNpi+P///3UgtgdiBlwYRIDAXyDuB2JOfIpgAGSqOSFFIPAbiFuBmA2fIhi4CMSGIEWM/8FKcYLfQNzIxEAYMBFlHVkOxxsEBAOTYLQABBgAIGo65ePhp98AAAAASUVORK5CYII=") no-repeat 85% 50%;
+              color: #fff; }
+          .home-banner .reg-form-container .reg-form .form-section .tab-container .tab-content .tab-pane button[class^="style_retryButton_"] {
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAopJREFUeNq8ll9ojWEcx9/z2kYunJpDIXbhglYLSzRTRMOFPyWulhSKxIVQUm4UtU0pJeZGaa4k/8vfSVq2C2tLyhIhuXD8241xxHx/9X3Xt6f33Tnn3dO+9an3eZ7znO/z9/d7MrnrFUGZmgR+BSkUlvn7ZeA9WDAeZvb76eBhGsNSzSrBIs7MlEtjOJpZBqwHN8AP0AtapN013ADugIMg9iBkEg5IPWgHi0sY8EWwA3wEs1jXD7aC18Vmtht0xxgNggGnrgcc4Le22WyfcdCJZrYE57lHpmHQwb2qBrsco7UcRLSMp8BflqeCu2B2nJntT5uU34BGsI2j/Cdt3Y6R6Sc4DDaD36ybxmXOqNkUcCGqhF6ABpqovvMQrHOMVDdBs5RXgy1qZiOaIXtjS5KP+aOXXIHBIofmKrgk5aORWRXYKw0nGCXGqmOy9AtBXchpVsuszgZ+9AE8kfIqM1suFfe50b6kZvVmNk8qngZ+9U6+Z4ayhEHCoRiL/sj3hNC5PxM9m+Xk+5uZfZKKGs9meh4GQkbzSCs8Gk0Ga/Q8mNkjqVgJ5ngy2wey0RKCzpChqV9i5XEPRjVR1KDOgUIUrk5Kw3YG09GUZVKtjWmz4HtLZvWZ2WAkNl4Bj6XDZcbHJCO7/BudaxNI8K6TFLWTmX7EbJgzystz7Rpo5Ua7RkucnNjAwNsF5kqbBfjbSc8Cy6z3nPvRyfgZZ/SK2SIbc5n382mRmKntGiyVAxNIODvtGJnmxxj1cqbtpbyu3vL9cYhpfQ/rz4CvCfs4xEOxiX2fl/O6SpLlpQeyzEf4nLPrU/D9Iu4DTeALy12cRaGUzmGKCxsZ5p0gXlQVKSNEH6PEUDmd/gswABiVhogEG+VAAAAAAElFTkSuQmCC");
+            width: 31px;
+            margin-left: 13px;
+            height: 31px;
+            cursor: pointer; }
+            .home-banner .reg-form-container .reg-form .form-section .tab-container .tab-content .tab-pane button[class^="style_retryButton_"] img {
+              display: none; }
+
+.application-process {
+  margin-bottom: 50px; }
+  .application-process .ap-bg-con {
+    background: url("assets/images/ap-bg.png") center 28px;
+    background-repeat: no-repeat;
+    padding: 0 0 30px; }
+    .application-process .ap-bg-con .ap-icon-container {
+      text-align: center; }
+      .application-process .ap-bg-con .ap-icon-container .ap-icons {
+        width: 73px;
+        height: 73px;
+        margin: 0 auto; }
+  .application-process h1 {
+    padding: 70px 0 50px;
+    font-size: 30px;
+    color: #111;
+    font-family: "TrebuchetBold";
+    margin: 0 auto; }
+  .application-process h2 {
+    padding: 0;
+    font-size: 22px;
+    color: #333;
+    font-family: "TrebuchetBold";
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; }
+  .application-process p {
+    font-family: "Trebuchet";
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    padding: 15px 50px; }
+
+.btn-secondary.focus,
+.btn-secondary:focus {
+  box-shadow: none; }
+
+/*# sourceMappingURL=index.css.map */

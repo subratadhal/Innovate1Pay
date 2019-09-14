@@ -1,0 +1,9 @@
+body {
+  background: #f00;
+}
+.home-banner {
+  min-height: 600px;
+  width: 100%;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+}
