@@ -394,7 +394,6 @@ class PersonalDetails extends Component {
     );
   }
 }
-
 export default PersonalDetails;
 
 // Image cropper in redux: rotation, zoom, fixed/dynamic aspect ratio. Uses reselect for intelligent caching. Port from fengyuanchen/cropper.
