@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import Widget from "../../../common/others/widget";
+import EmploymentTips from "../../../common/others/employmentTips";
+import EmploymentTable from "./employment/employmentTable";
+import EmploymentForm from "./employment/employmentForm";
 
 class EmploymentInfo extends Component {
   componentDidMount() {}
@@ -25,12 +28,12 @@ class EmploymentInfo extends Component {
                           <div className="main-heading">
                             Individual Employment Information
                           </div>
+                          <EmploymentTable />
+                          <EmploymentForm />
                         </Col>
                       </Row>
                     </div>
-                    <div className="app-body__right">
-                      <div className="main-heading">Tips:</div>
-                    </div>
+                    <EmploymentTips />
                   </div>
                   <div className="app-footer">
                     <Button className="primary-btn">Save & Continue</Button>
@@ -55,7 +58,7 @@ class App extends React.Component {
         src:''
       };
     }
-  
+
     apply = (file) => {
       var src = window.URL.createObjectURL(file);
       this.setState({
@@ -73,7 +76,7 @@ class App extends React.Component {
       );
     }
   }
-  
+
   ReactDOM.render(
     <App />,
     document.getElementById('container')

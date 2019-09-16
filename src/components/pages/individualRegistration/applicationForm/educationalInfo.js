@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import Widget from "../../../common/others/widget";
+import EducationlTips from "../../../common/others/educationlTips";
+import EducationTable from "./education/educationTable";
+import EducationForm from "./education/educationForm";
 
 class EducationalInfo extends Component {
   componentDidMount() {}
@@ -25,12 +28,12 @@ class EducationalInfo extends Component {
                           <div className="main-heading">
                             Individual Educational Information
                           </div>
+                          <EducationTable />
+                          <EducationForm />
                         </Col>
                       </Row>
                     </div>
-                    <div className="app-body__right">
-                      <div className="main-heading">Tips:</div>
-                    </div>
+                    <EducationlTips />
                   </div>
                   <div className="app-footer">
                     <Button disabled className="primary-btn">

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import Widget from "../../../common/others/widget";
+import Preview from "./previewAndPayment/preview";
+import Payment from "./previewAndPayment/payment";
 
 class PreviewAndPayment extends Component {
   componentDidMount() {}
@@ -17,22 +19,8 @@ class PreviewAndPayment extends Component {
           <Container>
             <Row>
               <Col>
-                <div className="app-wrapper">
-                  <div className="app-body">
-                    <div className="app-body__left">
-                      <Row>
-                        <Col>
-                          <div className="main-heading">
-                            Individual Application
-                          </div>
-                        </Col>
-                      </Row>
-                    </div>
-                  </div>
-                  <div className="app-footer">
-                    <Button className="primary-btn">I/We Agree</Button>
-                  </div>
-                </div>
+                {/* <Preview /> */}
+                <Payment />
               </Col>
             </Row>
           </Container>

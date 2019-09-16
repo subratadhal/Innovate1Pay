@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
+import { Container, Row, Col, Alert } from "reactstrap";
 
 class IndividualRegistration extends Component {
   constructor(props) {
@@ -27,13 +28,29 @@ class IndividualRegistration extends Component {
   }
   render() {
     return (
-      <React.Fragment>
-        <h1>IndividualRegistration</h1>
-        <div>
-          {this.renderRedirect()}
-          <button onClick={this.setRedirect}>Redirect</button>
-        </div>
-      </React.Fragment>
+      <section class="application-container ">
+        <Container>
+          <Row>
+            <Col>
+              <div className="app-wrapper mt50">
+                <div className="app-body">
+                  <div className="app-body__left">
+                    <div class="main-heading">Individual Application</div>
+                    <Alert color="primary">
+                      Sorry, You can not proceed further in the process as you
+                      have already validated your email address.
+                    </Alert>
+                    <div>
+                      {this.renderRedirect()}
+                      <button onClick={this.setRedirect}>Redirect</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     );
   }
 }
