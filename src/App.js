@@ -6,8 +6,6 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
-/*import PostList from './components/PostList';*/
-/* <PostList /> */
 import Home from "./components/pages/home";
 import Header from "./components/common/header/index";
 import Footer from "./components/common/footer/index";
