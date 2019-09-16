@@ -98,8 +98,13 @@ class PersonalDetails extends Component {
     } else {
       //check state only
       if (n === "countryofOrigin") {
-        if (v === 128) {
+        if (v === "128") {
           //check Nigeria value 128
+          this.setState({
+            [n]: v,
+            stateList: ["--Please Select--"]
+          });
+          console.log("Nigeria");
         } else {
           // for other country state should be Others.
           this.setState({
