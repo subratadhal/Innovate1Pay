@@ -7,8 +7,14 @@
 .mt20 {
   margin-top: 20px; }
 
+.mt50 {
+  margin-top: 50px; }
+
 .mb26 {
   margin-bottom: 26px !important; }
+
+.p0 {
+  padding: 0 !important; }
 
 body {
   background: #fff; }
@@ -300,6 +306,7 @@ body {
     right: 0;
     bottom: -19px;
     color: #888; }
+  .form-element .upload-photo-success,
   .form-element .upload-photo,
   .form-element textarea,
   .form-element select,
@@ -310,6 +317,7 @@ body {
     font-size: 14px;
     font-family: "Trebuchet";
     line-height: 30px; }
+  .form-element .upload-photo-success,
   .form-element .upload-photo {
     border-style: dashed;
     height: 200px;
@@ -317,11 +325,14 @@ body {
     justify-content: center;
     align-content: center;
     flex-direction: column; }
+    .form-element .upload-photo-success.is-invalid,
     .form-element .upload-photo.is-invalid {
       border-color: #dc3545; }
+      .form-element .upload-photo-success.is-invalid button,
       .form-element .upload-photo.is-invalid button {
         border-color: #dc3545;
         color: #dc3545; }
+    .form-element .upload-photo-success .icon-w,
     .form-element .upload-photo .icon-w {
       width: 50px;
       height: 50px;
@@ -331,18 +342,39 @@ body {
       background-size: cover;
       padding: 26px 0;
       overflow: hidden; }
+    .form-element .upload-photo-success button,
     .form-element .upload-photo button {
       border: 2px solid #00b44b;
       background: #fff;
       color: #00b44b;
       border-radius: 0;
       margin: 0 auto 5px; }
+      .form-element .upload-photo-success button:hover,
+      .form-element .upload-photo button:hover {
+        background: #00b44b;
+        color: #fff; }
+    .form-element .upload-photo-success p,
     .form-element .upload-photo p {
       font-size: 12px;
       line-height: normal;
       text-align: center;
       color: #666;
       margin-bottom: 0; }
+  .form-element .upload-photo-success {
+    width: 123px;
+    height: auto;
+    border: 0;
+    padding: 0; }
+    .form-element .upload-photo-success .av-img {
+      border: 1px solid #ccc;
+      padding: 5px 0;
+      text-align: center; }
+      .form-element .upload-photo-success .av-img img {
+        width: 50px;
+        height: auto;
+        margin: 0 auto; }
+    .form-element .upload-photo-success button {
+      margin: 10px auto 0; }
   .form-element select {
     height: 45px !important; }
     .form-element select.w100 {
@@ -561,8 +593,22 @@ body {
             background: #00a746; }
 
 .avatar-container {
-  background: #aeb4b7 url("assets/images/avatar.png") no-repeat center center;
-  width: 144px;
-  height: 216px; }
+  display: flex; }
+  .avatar-container .avatar-section {
+    flex: 1;
+    padding: 20px; }
+    .avatar-container .avatar-section .avatar-photo-uploder {
+      background: #e4e6e7;
+      width: 144px !important;
+      height: 216px !important;
+      margin: 0 auto 80px; }
+  .avatar-container .tips-section {
+    background: #f4f4f4;
+    flex-basis: 180px;
+    padding: 20px; }
+    .avatar-container .tips-section p {
+      font-size: 14px; }
+      .avatar-container .tips-section p.av-tips {
+        font-family: "TrebuchetBold"; }
 
 /*# sourceMappingURL=index.css.map */

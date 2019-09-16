@@ -105,7 +105,7 @@ class Payment extends Component {
                           <Row>
                             <Col sm="12">
                               <div className="gateway-row">
-                                <div className="gateway-row__icons"></div>
+                                <div className="gateway-row__icons innovate1pay"></div>
                                 <div className="gateway-row__text">
                                   Innovate1pay
                                 </div>
@@ -114,7 +114,7 @@ class Payment extends Component {
                                 </div>
                               </div>
                               <div className="gateway-row">
-                                <div className="gateway-row__icons"></div>
+                                <div className="gateway-row__icons newPaymentsPlatform"></div>
                                 <div className="gateway-row__text">
                                   New Payments
                                   <br />
@@ -125,7 +125,7 @@ class Payment extends Component {
                                 </div>
                               </div>
                               <div className="gateway-row">
-                                <div className="gateway-row__icons"></div>
+                                <div className="gateway-row__icons teasyPay"></div>
                                 <div className="gateway-row__text">
                                   TeasyPay
                                 </div>
@@ -134,7 +134,7 @@ class Payment extends Component {
                                 </div>
                               </div>
                               <div className="gateway-row">
-                                <div className="gateway-row__icons"></div>
+                                <div className="gateway-row__icons saanaPAY"></div>
                                 <div className="gateway-row__text">
                                   SaanaPAY
                                 </div>

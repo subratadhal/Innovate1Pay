@@ -853,11 +853,23 @@ body {
 
       .gateway-row__icons {
         flex-basis: 170px;
-        background: #f00;
-        height: 40px;
+
+        height: 58px;
         margin: 0 50px 0 25px;
         display: flex;
         align-items: center;
+        &.innovate1pay {
+          background: url("assets/images/ip.png") no-repeat center center;
+        }
+        &.newPaymentsPlatform {
+          background: url("assets/images/npp.png") no-repeat center center;
+        }
+        &.teasyPay {
+          background: url("assets/images/teasy.png") no-repeat center center;
+        }
+        &.saanaPAY {
+          background: url("assets/images/sanapay.png") no-repeat center center;
+        }
       }
 
       .gateway-row__text {

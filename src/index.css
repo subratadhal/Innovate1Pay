@@ -564,11 +564,18 @@ body {
       border-bottom: 1px solid #eee; }
       .payment-tab-container .tab-box .gateway-row .gateway-row__icons {
         flex-basis: 170px;
-        background: #f00;
-        height: 40px;
+        height: 58px;
         margin: 0 50px 0 25px;
         display: flex;
         align-items: center; }
+        .payment-tab-container .tab-box .gateway-row .gateway-row__icons.innovate1pay {
+          background: url("assets/images/ip.png") no-repeat center center; }
+        .payment-tab-container .tab-box .gateway-row .gateway-row__icons.newPaymentsPlatform {
+          background: url("assets/images/npp.png") no-repeat center center; }
+        .payment-tab-container .tab-box .gateway-row .gateway-row__icons.teasyPay {
+          background: url("assets/images/teasy.png") no-repeat center center; }
+        .payment-tab-container .tab-box .gateway-row .gateway-row__icons.saanaPAY {
+          background: url("assets/images/sanapay.png") no-repeat center center; }
       .payment-tab-container .tab-box .gateway-row .gateway-row__text {
         flex: 1;
         font-family: "TrebuchetBold";
