@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import { Container, Row, Col, Alert } from "reactstrap";
 import PostList from "../../PostList";
+import CreatePost from "../../CreatePost";
+import NewPost from "../../NewPost";
 //https://appdividend.com/2018/06/15/react-redux-axios-tutorial-example/
 
 class IndividualRegistration extends Component {
@@ -33,6 +35,12 @@ class IndividualRegistration extends Component {
       <section class="application-container ">
         <Container>
           <Row>
+            {/* <Col>
+              <NewPost />
+            </Col>
+            <Col>
+              <PostList />
+            </Col> */}
             <Col>
               <div className="app-wrapper mt50">
                 <div className="app-body">
@@ -42,7 +50,7 @@ class IndividualRegistration extends Component {
                       Sorry, You can not proceed further in the process as you
                       have already validated your email address.
                     </Alert>
-                    <PostList />
+
                     <div>
                       {this.renderRedirect()}
                       <button onClick={this.setRedirect}>Redirect</button>
