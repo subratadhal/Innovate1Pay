@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import { Container, Row, Col, Alert } from "reactstrap";
-import PostList from "../../PostList";
-import CreatePost from "../../CreatePost";
-import NewPost from "../../NewPost";
+// import PostList from "../../PostList";
+// import CreatePost from "../../CreatePost";
+// import NewPost from "../../NewPost";
 //https://appdividend.com/2018/06/15/react-redux-axios-tutorial-example/
 
 class IndividualRegistration extends Component {

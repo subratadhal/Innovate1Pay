@@ -1,4 +1,4 @@
-import { ADD_POST, DELETE_POST, FETCH_POST } from "./types";
+import { REGISTER_USER, ADD_POST, DELETE_POST, FETCH_POST } from "./types";
 
 import axios from "axios";
 
@@ -19,7 +19,7 @@ export const createPost = ({ title, body }) => {
 
 export const createPostSuccess = data => {
   return {
-    type: ADD_POST,
+    type: REGISTER_USER,
     payload: {
       userId: data.id,
       title: data.title,

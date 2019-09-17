@@ -1,5 +1,15 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button, Form } from "reactstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  Form,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter
+} from "reactstrap";
 import Widget from "../../../common/others/widget";
 import InputElement from "../../../common/formElement/inputElement";
 import SelectElement from "../../../common/formElement/selectElement";
@@ -40,7 +50,8 @@ class PersonalDetails extends Component {
       confirmMobileNumber: "",
       pasportPhoto: "",
       stateProvince: "",
-      cityTown: ""
+      cityTown: "",
+      modal: false
     };
   }
   checkFormValidElement = () => {
@@ -79,6 +90,12 @@ class PersonalDetails extends Component {
       count += 1;
     } while (count < array.length);
   };
+  toggle = () => {
+    this.setState(prevState => ({
+      modal: !prevState.modal
+    }));
+  };
+
   formSubmit = e => {
     e.preventDefault();
     this.checkFormValidElement();
@@ -382,7 +399,9 @@ class PersonalDetails extends Component {
                       </div>
                     </div>
                     <div className="app-footer">
-                      <Button className="primary-btn">Save & Continue</Button>
+                      <Button className="primary-btn" onClick={this.toggle}>
+                        Save & Continue
+                      </Button>
                     </div>
                   </Form>
                 </div>
@@ -390,6 +409,47 @@ class PersonalDetails extends Component {
             </Row>
           </Container>
         </section>
+        <Modal
+          isOpen={this.state.modal}
+          toggle={this.toggle}
+          className={this.props.className}
+        >
+          <ModalHeader toggle={this.toggle}>Application Info</ModalHeader>
+          <ModalBody>
+            Please note the details of your application below.
+            <br />
+            <br />
+            You will need the specified <strong>
+              Application Number
+            </strong> and <strong>PIN</strong> (Which represents your{" "}
+            <i>Password</i>) to make additional changes (if required) before
+            submission and to monitor the progress of this application after
+            submission.
+            <br />
+            <div className="preview-container application-start-popup">
+              <div className="pc-row mb15">
+                <div className="pc-label w120">Application Number</div>
+                <div className="pc-text">
+                  <span className="highlight">CRFFNI2019090311751</span>
+                </div>
+              </div>
+              <div className="pc-row">
+                <div className="pc-label w120">Pin Number</div>
+                <div className="pc-text">
+                  <span className="highlight">8930920</span>
+                </div>
+              </div>
+            </div>
+          </ModalBody>
+          <ModalFooter>
+            <Button className="modal-btn-cancel" onClick={this.toggle}>
+              Cancel
+            </Button>
+            <Button className="modal-btn" onClick={this.toggle}>
+              Continue Application
+            </Button>{" "}
+          </ModalFooter>
+        </Modal>
       </React.Fragment>
     );
   }

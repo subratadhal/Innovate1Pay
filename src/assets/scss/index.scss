@@ -19,7 +19,9 @@ $blue: #1752a2;
 .mt50 {
   margin-top: 50px;
 }
-
+.mb15 {
+  margin-bottom: 15px !important;
+}
 .mb26 {
   margin-bottom: 26px !important;
 }
@@ -666,6 +668,11 @@ body {
   padding: 30px;
   margin-bottom: 30px;
   position: relative;
+  &.application-start-popup {
+    padding: 20px 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 
   button {
     border-radius: 50%;
@@ -706,6 +713,9 @@ body {
       display: flex;
       align-items: center;
       position: relative;
+      &.w120 {
+        flex-basis: 150px;
+      }
 
       &:after {
         content: ":";
@@ -926,6 +936,33 @@ body {
       &.av-tips {
         font-family: $fontHeading;
       }
+    }
+  }
+}
+
+button {
+  &.modal-btn {
+    border: 0;
+    border-radius: 0;
+    height: 50px;
+    background: $green;
+    width: 240px;
+    color: #fff;
+    font-size: 22px;
+
+    &:hover {
+      background: $darkgreen;
+    }
+  }
+  &.modal-btn-cancel {
+    border: 0;
+    border-radius: 0;
+    height: 50px;
+    width: 100px;
+    color: #fff;
+    font-size: 22px;
+
+    &:hover {
     }
   }
 }

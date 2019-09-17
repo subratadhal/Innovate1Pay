@@ -14,8 +14,30 @@ import PersonalDetails from "./components/pages/individualRegistration/applicati
 import EducationalInfo from "./components/pages/individualRegistration/applicationForm/educationalInfo";
 import EmploymentInfo from "./components/pages/individualRegistration/applicationForm/employmentInfo";
 import PreviewAndPayment from "./components/pages/individualRegistration/applicationForm/previewAndPayment";
+
+import cookie from "react-cookies";
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
+    const PrivateRoute = ({ component: Component, ...rest }) => {
+      return (
+        <Route
+          {...rest}
+          render={props =>
+            cookie.load("userId") ? (
+              <Component {...props} />
+            ) : (
+              <Redirect
+                to={{ pathname: "/", state: { from: props.location } }}
+              />
+            )
+          }
+        />
+      );
+    };
     return (
       <React.Fragment>
         <Router>
@@ -27,22 +49,22 @@ class App extends Component {
               path="/individual/registration"
               component={IndividualRegistration}
             />
-            <Route
+            <PrivateRoute
               exact
               path="/individual/personal-info"
               component={PersonalDetails}
             />
-            <Route
+            <PrivateRoute
               exact
               path="/individual/educational-info"
               component={EducationalInfo}
             />
-            <Route
+            <PrivateRoute
               exact
               path="/individual/employment-info"
               component={EmploymentInfo}
             />
-            <Route
+            <PrivateRoute
               exact
               path="/individual/preview-and-payment"
               component={PreviewAndPayment}

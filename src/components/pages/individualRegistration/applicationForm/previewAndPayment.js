@@ -19,8 +19,8 @@ class PreviewAndPayment extends Component {
           <Container>
             <Row>
               <Col>
-                {/* <Preview /> */}
-                <Payment />
+                <Preview />
+                {/*  <Payment /> */}
               </Col>
             </Row>
           </Container>

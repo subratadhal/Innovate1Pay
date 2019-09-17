@@ -1,11 +1,16 @@
-import { ADD_POST, DELETE_POST, FETCH_POST } from "../actions/types";
+import {
+  REGISTER_USER,
+  ADD_POST,
+  DELETE_POST,
+  FETCH_POST
+} from "../actions/types";
 const initialState = {
   posts: [],
   type: ""
 };
 export default function postReducer(state = initialState, action) {
   switch (action.type) {
-    case ADD_POST:
+    case REGISTER_USER:
       console.log("action.payload", action.payload);
       return {
         posts: [...state.posts, action.payload],

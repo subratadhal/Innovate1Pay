@@ -10,6 +10,9 @@
 .mt50 {
   margin-top: 50px; }
 
+.mb15 {
+  margin-bottom: 15px !important; }
+
 .mb26 {
   margin-bottom: 26px !important; }
 
@@ -443,6 +446,10 @@ body {
   padding: 30px;
   margin-bottom: 30px;
   position: relative; }
+  .preview-container.application-start-popup {
+    padding: 20px 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 10px; }
   .preview-container button {
     border-radius: 50%;
     width: 32px;
@@ -472,6 +479,8 @@ body {
       display: flex;
       align-items: center;
       position: relative; }
+      .preview-container .pc-row .pc-label.w120 {
+        flex-basis: 150px; }
       .preview-container .pc-row .pc-label:after {
         content: ":";
         position: absolute;
@@ -617,5 +626,23 @@ body {
       font-size: 14px; }
       .avatar-container .tips-section p.av-tips {
         font-family: "TrebuchetBold"; }
+
+button.modal-btn {
+  border: 0;
+  border-radius: 0;
+  height: 50px;
+  background: #00b44b;
+  width: 240px;
+  color: #fff;
+  font-size: 22px; }
+  button.modal-btn:hover {
+    background: #00a746; }
+button.modal-btn-cancel {
+  border: 0;
+  border-radius: 0;
+  height: 50px;
+  width: 100px;
+  color: #fff;
+  font-size: 22px; }
 
 /*# sourceMappingURL=index.css.map */
